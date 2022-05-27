@@ -7,7 +7,6 @@ import lombok.Data;
 public class ScannerFieldRequestDTO {
 
     private String fieldName;
-
     private int x;
     private int y;
     private int width;

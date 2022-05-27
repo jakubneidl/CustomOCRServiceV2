@@ -6,9 +6,10 @@ import com.example.customocrservice2.model.OCRTemplateResponseDTO;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")
-public interface OcrTemplateMapper {
+public abstract class OCRTemplateMapper {
 
-    OCRTemplate mapToDomain(OCRTemplateRequestDTO ocrTemplateRequestDTO);
+    public abstract OCRTemplate mapToDomain(OCRTemplateRequestDTO ocrTemplateRequestDTO);
 
-    OCRTemplateResponseDTO mapToDto(OCRTemplate ocrTemplate);
+    public abstract OCRTemplateResponseDTO mapToDto(OCRTemplate ocrTemplate);
+
 }

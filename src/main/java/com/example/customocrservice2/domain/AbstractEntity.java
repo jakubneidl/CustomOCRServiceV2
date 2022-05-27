@@ -1,14 +1,15 @@
 package com.example.customocrservice2.domain;
 
 import lombok.Data;
+import org.springframework.data.annotation.CreatedDate;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 @Data
 public abstract class AbstractEntity {
 
-    private UUID id;
+    private String id;
+    @CreatedDate
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 }

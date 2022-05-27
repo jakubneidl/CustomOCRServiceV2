@@ -8,5 +8,5 @@ import java.util.List;
 public class OCRTemplateRequestDTO {
 
     private String name;
-    private List<ScannerFieldRequestDTO> scannerFields;
+    private List<ScannerFieldRequestDTO> scannedFields;
 }
