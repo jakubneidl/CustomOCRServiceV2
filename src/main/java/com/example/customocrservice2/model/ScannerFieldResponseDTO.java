@@ -8,6 +8,7 @@ import java.time.LocalDateTime;
 public class ScannerFieldResponseDTO {
 
     private String fieldName;
+    private String value;
     private int x;
     private int y;
     private int width;
